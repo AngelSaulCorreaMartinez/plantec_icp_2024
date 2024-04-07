@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "PlanTec_backend": {
+      "main": "src/PlanTec_backend/main.mo",
+      "type": "motoko"
+    },
+    "PlanTec_frontend": {
+      "dependencies": [
+        "PlanTec_backend"
+      ],
+      "source": [
+        "src/PlanTec_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
